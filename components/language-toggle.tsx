@@ -10,17 +10,17 @@ export function LanguageToggle() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon" className="w-9 h-9 hover:bg-primary/10 transition-all duration-300">
+        <Button variant="ghost" size="icon" className="w-9 h-9 hover:bg-primary/10 transition-all duration-300 cursor-pointer">
           <Globe className="h-4 w-4" />
           <span className="sr-only">Change language</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="animate-fade-in-scale">
-        <DropdownMenuItem onClick={() => setLanguage("es")} className={language === "es" ? "bg-primary/10" : ""}>
+      <DropdownMenuContent align="end" className="animate-fade-in-scale ">
+        <DropdownMenuItem onClick={() => setLanguage("es")} className={language === "es" ? "bg-primary/10 " : "cursor-pointer"}>
           <span className="mr-2">🇪🇸</span>
           Español
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setLanguage("en")} className={language === "en" ? "bg-primary/10" : ""}>
+        <DropdownMenuItem onClick={() => setLanguage("en")} className={language === "en" ? "bg-primary/10 " : "cursor-pointer"}>
           <span className="mr-2">🇺🇸</span>
           English
         </DropdownMenuItem>

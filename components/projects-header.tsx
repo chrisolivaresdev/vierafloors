@@ -16,7 +16,7 @@ export function ProjectsHeader() {
           <Logo />
 
           {/* Title */}
-          <h1 className="text-xl font-semibold bg-gradient-to-r from-yellow-400 to-blue-600 bg-clip-text text-transparent">
+          <h1 className="hidden md:block text-xl font-semibold bg-gradient-to-r from-yellow-400 to-blue-600 bg-clip-text text-transparent">
             {t("title", "portfolio")}
           </h1>
 

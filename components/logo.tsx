@@ -1,3 +1,5 @@
+import { useLanguage } from "@/contexts/language-context"
+
 interface LogoProps {
   className?: string
   size?: "sm" | "md" | "lg"
@@ -9,6 +11,8 @@ export function Logo({ className = "", size = "md" }: LogoProps) {
     md: "w-12 h-12",
     lg: "w-16 h-16",
   }
+
+  const { t } = useLanguage()
 
   return (
     <div className={`flex items-center gap-3 ${className}`}>
@@ -53,7 +57,7 @@ export function Logo({ className = "", size = "md" }: LogoProps) {
         >
           Viera Floors
         </span>
-        <span className={`text-muted-foreground ${size === "sm" ? "text-xs" : "text-sm"}`}>Expert Remodeling</span>
+        <span className={`text-muted-foreground ${size === "sm" ? "text-xs" : "text-sm"}`}>{t('expert','nav')}</span>
       </div>
     </div>
   )

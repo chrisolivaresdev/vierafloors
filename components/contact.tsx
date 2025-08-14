@@ -13,23 +13,23 @@ export function Contact() {
     {
       icon: Phone,
       title: t("phone", "contact"),
-      value: "+1 (555) 123-4567",
+      value: "+1 (347) 984-1247",
       color: "text-primary",
       bgColor: "bg-primary/10",
-      action: "tel:+15551234567",
+      action: "tel:+13479841247",
     },
     {
       icon: Mail,
       title: t("email", "contact"),
-      value: "info@vierafloors.com",
+      value: "Jeffren_10@hotmail.com",
       color: "text-secondary",
       bgColor: "bg-secondary/10",
-      action: "mailto:info@vierafloors.com",
+      action: "mailto:Jeffren_10@hotmail.com",
     },
     {
       icon: MapPin,
       title: t("address", "contact"),
-      value: "123 Construction Ave, Miami, FL 33101",
+      value: "12414 stone bark trail Orlando, FL 32824",
       color: "text-primary",
       bgColor: "bg-primary/10",
       action: "https://maps.google.com/?q=123+Construction+Ave,+Miami,+FL+33101",
@@ -124,7 +124,7 @@ export function Contact() {
                 <Button
                   size="lg"
                   className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold transition-all duration-300 hover:scale-105"
-                  onClick={() => window.open("tel:+15551234567")}
+                  onClick={() => window.open("tel:+13479841247")}
                 >
                   <Phone className="w-4 h-4 mr-2" />
                   {t("callNow", "contact")}
@@ -133,7 +133,7 @@ export function Contact() {
                   variant="outline"
                   size="lg"
                   className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground transition-all duration-300 hover:scale-105 bg-transparent"
-                  onClick={() => window.open("mailto:info@vierafloors.com")}
+                  onClick={() => window.open("mailto:Jeffren_10@hotmail.com")}
                 >
                   <Mail className="w-4 h-4 mr-2" />
                   {t("sendMessage", "contact")}

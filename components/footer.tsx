@@ -3,57 +3,26 @@
 import * as React from "react"
 import { Facebook, Instagram, Twitter, Phone, Mail, MapPin } from "lucide-react"
 import { Logo } from "@/components/logo"
+import { useLanguage } from "@/contexts/language-context"
 
 export function Footer() {
-  const [language, setLanguage] = React.useState<"es" | "en">("es")
 
-  React.useEffect(() => {
-    const savedLang = localStorage.getItem("viera-floors-lang") as "es" | "en" | null
-    if (savedLang) {
-      setLanguage(savedLang)
-    }
-  }, [])
+  const { t } = useLanguage()
 
-  const content = {
-    es: {
-      description: "Transformamos espacios con calidad excepcional y más de 10 años de experiencia en remodelación.",
-      services: {
-        title: "Servicios",
-        items: ["Remodelación de Baños", "Diseño de Cocinas", "Instalación de Cerámicas", "Techos Modernos"],
-      },
-      contact: {
-        title: "Contacto",
-        phone: "+1 (555) 123-4567",
-        email: "info@vierafloors.com",
-        address: "123 Construction Ave, Miami, FL",
-      },
-      links: {
-        title: "Enlaces",
-        items: ["Inicio", "Servicios", "Sobre Nosotros", "Opiniones", "Contacto"],
-      },
-      copyright: "© 2024 Viera Floors. Todos los derechos reservados.",
-    },
-    en: {
-      description: "We transform spaces with exceptional quality and over 10 years of experience in remodeling.",
-      services: {
-        title: "Services",
-        items: ["Bathroom Remodeling", "Kitchen Design", "Ceramic Installation", "Modern Ceilings"],
-      },
-      contact: {
-        title: "Contact",
-        phone: "+1 (555) 123-4567",
-        email: "info@vierafloors.com",
-        address: "123 Construction Ave, Miami, FL",
-      },
-      links: {
-        title: "Links",
-        items: ["Home", "Services", "About Us", "Reviews", "Contact"],
-      },
-      copyright: "© 2024 Viera Floors. All rights reserved.",
-    },
-  }
+  const itemsServices = [
+    t("items.0", "footer.services"),
+    t("items.1", "footer.services"),
+    t("items.2", "footer.services"),
+    t("items.3", "footer.services"),
+  ]
 
-  const currentContent = content[language]
+    const itemsLinks = [
+    t("items.0", "footer.links"),
+    t("items.1", "footer.links"),
+    t("items.2", "footer.links"),
+    t("items.3", "footer.links"),
+    t("items.4", "footer.links"),
+  ]
 
   return (
     <footer className="bg-card border-t">
@@ -62,7 +31,7 @@ export function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <Logo size="md" />
-            <p className="text-muted-foreground text-sm leading-relaxed">{currentContent.description}</p>
+            <p className="text-muted-foreground text-sm leading-relaxed">{ t('description', 'footer') }</p>
             <div className="flex space-x-4">
               <a
                 href="#"
@@ -87,9 +56,9 @@ export function Footer() {
 
           {/* Services */}
           <div className="space-y-4">
-            <h3 className="font-bold text-lg">{currentContent.services.title}</h3>
+            <h3 className="font-bold text-lg">{ t('title', 'footer.services') }</h3>
             <ul className="space-y-2">
-              {currentContent.services.items.map((item, index) => (
+              {itemsServices.map((item, index) => (
                 <li key={index}>
                   <a
                     href="#"
@@ -104,28 +73,28 @@ export function Footer() {
 
           {/* Contact */}
           <div className="space-y-4">
-            <h3 className="font-bold text-lg">{currentContent.contact.title}</h3>
+            <h3 className="font-bold text-lg">{ t('title', 'footer.contact') }</h3>
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-primary" />
-                <span className="text-muted-foreground text-sm">{currentContent.contact.phone}</span>
+                <span className="text-muted-foreground text-sm">{ t('phone', 'footer.contact') }</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-primary" />
-                <span className="text-muted-foreground text-sm">{currentContent.contact.email}</span>
+                <span className="text-muted-foreground text-sm">{ t('email', 'footer.contact') }</span>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="w-4 h-4 text-primary" />
-                <span className="text-muted-foreground text-sm">{currentContent.contact.address}</span>
+                <span className="text-muted-foreground text-sm">{ t('address', 'footer.contact') }</span>
               </div>
             </div>
           </div>
 
           {/* Links */}
           <div className="space-y-4">
-            <h3 className="font-bold text-lg">{currentContent.links.title}</h3>
+            <h3 className="font-bold text-lg">{ t('title', 'footer.links') }</h3>
             <ul className="space-y-2">
-              {currentContent.links.items.map((item, index) => (
+              {itemsLinks.map((item, index) => (
                 <li key={index}>
                   <a
                     href="#"
@@ -140,7 +109,7 @@ export function Footer() {
         </div>
 
         <div className="border-t mt-12 pt-8 text-center">
-          <p className="text-muted-foreground text-sm">{currentContent.copyright}</p>
+          <p className="text-muted-foreground text-sm">{ t('copyright', 'footer') }</p>
         </div>
       </div>
     </footer>

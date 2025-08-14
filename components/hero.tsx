@@ -47,7 +47,7 @@ export function Hero() {
         ></div>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pb-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8 animate-slide-in-up">
@@ -113,7 +113,7 @@ export function Hero() {
           <div className="relative animate-fade-in-scale" style={{ animationDelay: "0.3s" }}>
             <Card className="p-8 bg-card/80 dark:bg-card/90 backdrop-blur-sm border-2 border-primary/20 dark:border-primary/30 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105">
               <div className="space-y-6">
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="flex items-center gap-3 p-4 bg-primary/10 dark:bg-primary/20 rounded-lg hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors duration-300">
                     <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
                       <Home className="w-5 h-5 text-primary-foreground" />

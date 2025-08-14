@@ -35,9 +35,9 @@ export function About() {
   ]
 
   const stats = [
-    { number: "500+", label: t("0.label", "about.stats") },
+    { number: "100+", label: t("0.label", "about.stats") },
     { number: "10+", label: t("1.label", "about.stats") },
-    { number: "50+", label: t("2.label", "about.stats") },
+    { number: "70+", label: t("2.label", "about.stats") },
     { number: "100%", label: t("3.label", "about.stats") },
   ]
 

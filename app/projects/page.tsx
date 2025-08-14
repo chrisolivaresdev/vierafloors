@@ -288,12 +288,6 @@ const ProjectsPage = () => {
                       <span className="text-sm text-muted-foreground">
                         {new Date(project.date).toLocaleDateString()}
                       </span>
-                      <Button
-                        size="sm"
-                        className="bg-gradient-to-r from-yellow-400 to-blue-600 hover:from-yellow-500 hover:to-blue-700"
-                      >
-                        {t("viewDetails", "portfolio")}
-                      </Button>
                     </div>
                   </CardContent>
                 </Card>
