@@ -118,6 +118,14 @@ const translations = {
         { number: "100%", label: "Garantía de Calidad" },
       ],
     },
+    // Before & After Section
+    beforeAfter: {
+      badge: "Transformaciones",
+      title: "El Antes y Después",
+      subtitle: "Descubre cómo transformamos espacios comunes en ambientes extraordinarios.",
+      before: "Antes",
+      after: "Después",
+    },
     // Reviews Section
     reviews: {
       badge: "Opiniones de Clientes",
@@ -414,6 +422,14 @@ const translations = {
         { number: "70+", label: "Satisfied Clients" },
         { number: "100%", label: "Quality Guarantee" },
       ],
+    },
+    // Before & After Section
+    beforeAfter: {
+      badge: "Transformations",
+      title: "Before and After",
+      subtitle: "Discover how we transform ordinary spaces into extraordinary environments.",
+      before: "Before",
+      after: "After",
     },
     // Reviews Section
     reviews: {
