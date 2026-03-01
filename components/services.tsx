@@ -38,7 +38,7 @@ export function Services() {
       features: t("ceramic.features", "services") as string[],
       price: t("ceramic.price", "services"),
       duration: t("ceramic.duration", "services"),
-      image: "/placeholder-g37as.png",
+      image: "/luxury-ceramic-tile-installation.png",
     },
     {
       icon: Home,
@@ -47,7 +47,7 @@ export function Services() {
       features: t("ceiling.features", "services") as string[],
       price: t("ceiling.price", "services"),
       duration: t("ceiling.duration", "services"),
-      image: "/placeholder-1rq8v.png",
+      image: "/projects/luxury-stone-tv.jpg",
     },
   ]
 
@@ -78,11 +78,10 @@ export function Services() {
             return (
               <Card
                 key={index}
-                className={`group overflow-hidden border-2 transition-all duration-500 hover:shadow-2xl hover:scale-105 cursor-pointer animate-fade-in-scale ${
-                  hoveredService === index
+                className={`group overflow-hidden border-2 transition-all duration-500 hover:shadow-2xl hover:scale-105 cursor-pointer animate-fade-in-scale ${hoveredService === index
                     ? "border-primary shadow-2xl scale-105"
                     : "border-border hover:border-primary/50 dark:hover:border-primary/70"
-                }`}
+                  }`}
                 style={{ animationDelay: `${index * 0.1}s` }}
                 onMouseEnter={() => setHoveredService(index)}
                 onMouseLeave={() => setHoveredService(null)}

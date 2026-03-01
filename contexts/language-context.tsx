@@ -7,7 +7,7 @@ type Language = "es" | "en"
 interface LanguageContextType {
   language: Language
   setLanguage: (language: Language) => void
-  t: (key: string, section?: string) => string
+  t: (key: string, section?: string) => any
 }
 
 const LanguageContext = React.createContext<LanguageContextType | undefined>(undefined)
