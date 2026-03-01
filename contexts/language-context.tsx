@@ -612,7 +612,7 @@ const translations = {
 }
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguageState] = React.useState<Language>("es")
+  const [language, setLanguageState] = React.useState<Language>("en")
 
   // Load language from localStorage on mount
   React.useEffect(() => {
