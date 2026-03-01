@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { ArrowRight, Bath, ChefHat, Layers, Home, Star, CheckCircle } from "lucide-react"
+import { ArrowRight, Bath, ChefHat, Layers, Home, Star, CheckCircle, Package } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -41,13 +41,13 @@ export function Services() {
       image: "/luxury-ceramic-tile-installation.png",
     },
     {
-      icon: Home,
-      title: t("ceiling.title", "services"),
-      description: t("ceiling.description", "services"),
-      features: t("ceiling.features", "services") as string[],
-      price: t("ceiling.price", "services"),
-      duration: t("ceiling.duration", "services"),
-      image: "/projects/luxury-stone-tv.jpg",
+      icon: Package,
+      title: t("materials.title", "services"),
+      description: t("materials.description", "services"),
+      features: t("materials.features", "services") as string[],
+      price: t("materials.price", "services"),
+      duration: t("materials.duration", "services"),
+      image: "/materials_construction_supplies.png",
     },
   ]
 
@@ -79,8 +79,8 @@ export function Services() {
               <Card
                 key={index}
                 className={`group overflow-hidden border-2 transition-all duration-500 hover:shadow-2xl hover:scale-105 cursor-pointer animate-fade-in-scale ${hoveredService === index
-                    ? "border-primary shadow-2xl scale-105"
-                    : "border-border hover:border-primary/50 dark:hover:border-primary/70"
+                  ? "border-primary shadow-2xl scale-105"
+                  : "border-border hover:border-primary/50 dark:hover:border-primary/70"
                   }`}
                 style={{ animationDelay: `${index * 0.1}s` }}
                 onMouseEnter={() => setHoveredService(index)}

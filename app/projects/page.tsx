@@ -95,7 +95,7 @@ const ProjectsPage = () => {
       date: "2024-03",
       client: "Venta Directa",
       duration: "Entrega Inmediata",
-      tags: ["Cerámica", "Porcelanato", "Venta"],
+      tags: ["Cerámica", "Porcelana", "Venta"],
     },
     {
       id: 9,
@@ -106,7 +106,7 @@ const ProjectsPage = () => {
       date: "2024-03",
       client: "Residencia Florida",
       duration: "2 semanas",
-      tags: ["Chevron", "Madera", "Pisos"],
+      tags: ["Chevron", "Porcelana", "Pisos"],
     },
     {
       id: 10,
@@ -128,7 +128,7 @@ const ProjectsPage = () => {
       date: "2024-03",
       client: "Residencia Florida",
       duration: "2 semanas",
-      tags: ["Chevron", "Madera", "Pisos"],
+      tags: ["Chevron", "Porcelana", "Pisos"],
     },
     {
       id: 12,
@@ -139,7 +139,7 @@ const ProjectsPage = () => {
       date: "2024-03",
       client: "Venta Directa",
       duration: "Entrega Inmediata",
-      tags: ["Mármol", "Porcelanato", "Lujo"],
+      tags: ["Mármol", "Porcelana", "Lujo"],
     },
     {
       id: 13,
@@ -161,7 +161,7 @@ const ProjectsPage = () => {
       date: "2024-03",
       client: "Residencia Florida",
       duration: "2 semanas",
-      tags: ["Chevron", "Madera", "Pisos"],
+      tags: ["Chevron", "Porcelana", "Pisos"],
     },
     {
       id: 15,
@@ -183,7 +183,7 @@ const ProjectsPage = () => {
       date: "2024-03",
       client: "Residencia Florida",
       duration: "2 semanas",
-      tags: ["Chevron", "Madera", "Pisos"],
+      tags: ["Chevron", "Porcelana", "Pisos"],
     },
     {
       id: 17,
@@ -194,7 +194,7 @@ const ProjectsPage = () => {
       date: "2024-03",
       client: "Venta Directa",
       duration: "Entrega Inmediata",
-      tags: ["Mármol", "Porcelanato", "Lujo"],
+      tags: ["Mármol", "Porcelana", "Lujo"],
     },
     {
       id: 18,
@@ -238,7 +238,7 @@ const ProjectsPage = () => {
       date: "2024-03",
       client: "Venta Directa",
       duration: "Entrega Inmediata",
-      tags: ["Porcelanato", "Blanco", "Lujo"],
+      tags: ["Porcelana", "Blanco", "Lujo"],
     },
     {
       id: 22,
@@ -249,7 +249,7 @@ const ProjectsPage = () => {
       date: "2024-03",
       client: "Dúplex Moderno",
       duration: "2 semanas",
-      tags: ["Escaleras", "Madera", "Contraste"],
+      tags: ["Escaleras", "Porcelana", "Contraste"],
     },
     {
       id: 23,
@@ -260,7 +260,7 @@ const ProjectsPage = () => {
       date: "2024-03",
       client: "Venta Directa",
       duration: "Entrega Inmediata",
-      tags: ["WPC", "Caramel", "Madera"],
+      tags: ["WPC", "Caramel", "Porcelana"],
     },
     {
       id: 24,
@@ -271,7 +271,7 @@ const ProjectsPage = () => {
       date: "2024-03",
       client: "Venta Directa",
       duration: "Entrega Inmediata",
-      tags: ["Porcelanato", "Blanco", "Lujo"],
+      tags: ["Porcelana", "Blanco", "Lujo"],
     },
     {
       id: 25,
@@ -370,7 +370,7 @@ const ProjectsPage = () => {
       date: "2024-03",
       client: "Venta Directa",
       duration: "En stock",
-      tags: ["Madera", "Clara", "Cerámica"],
+      tags: ["Porcelana", "Clara", "Cerámica"],
     },
     {
       id: 34,
@@ -447,7 +447,7 @@ const ProjectsPage = () => {
       date: "2024-03",
       client: "Venta Directa",
       duration: "Entrega Inmediata",
-      tags: ["WPC", "Madera", "Champagne"],
+      tags: ["WPC", "Porcelana", "Champagne"],
     },
     {
       id: 41,
@@ -480,7 +480,7 @@ const ProjectsPage = () => {
       date: "2024-03",
       client: "Showroom Viera",
       duration: "En stock",
-      tags: ["Calacatta", "Porcelanato", "Veteado"],
+      tags: ["Calacatta", "Porcelana", "Veteado"],
     },
     {
       id: 44,
@@ -491,7 +491,7 @@ const ProjectsPage = () => {
       date: "2024-03",
       client: "Showroom Viera",
       duration: "En stock",
-      tags: ["Calacatta", "Porcelanato", "Veteado"],
+      tags: ["Calacatta", "Porcelana", "Veteado"],
     },
     {
       id: 45,
@@ -535,7 +535,7 @@ const ProjectsPage = () => {
       date: "2024-03",
       client: "Showroom Viera",
       duration: "En stock",
-      tags: ["Calacatta", "Exhibición", "Porcelanato"],
+      tags: ["Calacatta", "Exhibición", "Porcelana"],
     },
     {
       id: 49,
@@ -579,7 +579,7 @@ const ProjectsPage = () => {
       date: "2024-03",
       client: "Venta Directa",
       duration: "Entrega Inmediata",
-      tags: ["WPC", "Madera Rica", "Panel"],
+      tags: ["WPC", "Porcelana Rica", "Panel"],
     },
     {
       id: 53,
@@ -590,7 +590,7 @@ const ProjectsPage = () => {
       date: "2024-03",
       client: "Logística Viera",
       duration: "En stock",
-      tags: ["Almacén", "Porcelanato", "Stock"],
+      tags: ["Almacén", "Porcelana", "Stock"],
     },
     {
       id: 54,
