@@ -799,8 +799,11 @@ const ProjectsPage = () => {
                         </Badge>
                       ))}
                     </div>
-
-
+                    <div className="flex items-center justify-between mt-2">
+                      <span className="text-sm text-muted-foreground italic">
+                        {new Date(project.date).toLocaleDateString(t("lang", "portfolio") === "es" ? "es-ES" : "en-US", { year: 'numeric', month: 'long' })}
+                      </span>
+                    </div>
                   </CardContent>
                 </Card>
               </motion.div>

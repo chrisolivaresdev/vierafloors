@@ -178,15 +178,6 @@ export function Reviews() {
           ))}
         </div>
 
-        {/* CTA */}
-        <div className="text-center animate-fade-in-scale" style={{ animationDelay: "0.6s" }}>
-          <Button
-            size="lg"
-            className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-4 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg"
-          >
-            {t("cta", "reviews")}
-          </Button>
-        </div>
       </div>
     </section>
   )

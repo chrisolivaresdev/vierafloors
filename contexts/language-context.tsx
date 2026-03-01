@@ -24,6 +24,7 @@ const translations = {
       reviews: "Opiniones",
       contact: "Contacto",
       cta: "Consulta Gratis",
+      expert: "Expertos en remodelación"
     },
     // Hero Section
     hero: {
@@ -111,9 +112,9 @@ const translations = {
         ],
       },
       stats: [
-        { number: "500+", label: "Proyectos Completados" },
+        { number: "100+", label: "Proyectos Completados" },
         { number: "10+", label: "Años de Experiencia" },
-        { number: "50+", label: "Clientes Satisfechos" },
+        { number: "70+", label: "Clientes Satisfechos" },
         { number: "100%", label: "Garantía de Calidad" },
       ],
     },
@@ -175,6 +176,7 @@ const translations = {
       noResults: "No se encontraron proyectos",
       noResultsDesc: "Intenta con diferentes términos de búsqueda o filtros",
       clearFilters: "Limpiar Filtros",
+      lang: "es",
       // Project descriptions
       modernBathroom: "Baño Moderno Spa",
       modernBathroomDesc: "Remodelación completa con acabados de lujo y diseño contemporáneo",
@@ -299,9 +301,9 @@ const translations = {
       },
       contact: {
         title: "Contacto",
-        phone: "+1 (555) 123-4567",
-        email: "info@vierafloors.com",
-        address: "123 Construction Ave, Miami, FL",
+        phone: "+1 (347) 984-1247",
+        email: "Jeffren_10@hotmail.com",
+        address: "12414 stone bark trail Orlando, FL 32824",
       },
       links: {
         title: "Enlaces",
@@ -320,6 +322,7 @@ const translations = {
       reviews: "Reviews",
       contact: "Contact",
       cta: "Free Consultation",
+      expert: "Expert Remodeling"
     },
     // Hero Section
     hero: {
@@ -406,9 +409,9 @@ const translations = {
         ],
       },
       stats: [
-        { number: "500+", label: "Completed Projects" },
+        { number: "100+", label: "Completed Projects" },
         { number: "10+", label: "Years of Experience" },
-        { number: "50+", label: "Satisfied Clients" },
+        { number: "70+", label: "Satisfied Clients" },
         { number: "100%", label: "Quality Guarantee" },
       ],
     },
@@ -470,6 +473,7 @@ const translations = {
       noResults: "No projects found",
       noResultsDesc: "Try different search terms or filters",
       clearFilters: "Clear Filters",
+      lang: "en",
       // Project descriptions
       modernBathroom: "Modern Spa Bathroom",
       modernBathroomDesc: "Complete remodel with luxury finishes and contemporary design",
@@ -594,9 +598,9 @@ const translations = {
       },
       contact: {
         title: "Contact",
-        phone: "+1 (555) 123-4567",
-        email: "info@vierafloors.com",
-        address: "123 Construction Ave, Miami, FL",
+        phone: "+1 (347) 984-1247",
+        email: "Jeffren_10@hotmail.com",
+        address: "12414 stone bark trail Orlando, FL 32824",
       },
       links: {
         title: "Links",

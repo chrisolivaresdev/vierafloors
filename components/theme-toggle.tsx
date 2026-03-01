@@ -41,7 +41,7 @@ export function ThemeToggle() {
       variant="ghost"
       size="icon"
       onClick={toggleTheme}
-      className="w-9 h-9 hover:bg-primary/10 dark:hover:bg-primary/20 transition-all duration-300 group"
+      className="w-9 h-9 hover:bg-primary/10 dark:hover:bg-primary/20 transition-all duration-300 group cursor-pointer"
       title={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
     >
       <Sun

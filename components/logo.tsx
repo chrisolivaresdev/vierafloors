@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { useLanguage } from "@/contexts/language-context"
 
 interface LogoProps {
   className?: string
@@ -12,8 +13,10 @@ export function Logo({ className = "", size = "md" }: LogoProps) {
     lg: "h-28 w-auto",
   }
 
+  const { t } = useLanguage()
+
   return (
-    <div className={`flex items-center ${className}`}>
+    <div className={`flex items-center gap-3 ${className}`}>
       <Image
         src="/logo.png"
         alt="Viera Floors Logo"
@@ -22,6 +25,14 @@ export function Logo({ className = "", size = "md" }: LogoProps) {
         className={`${sizeClasses[size]} object-contain`}
         priority
       />
+      <div className="flex flex-col">
+        <span
+          className={`font-bold text-foreground leading-tight ${size === "sm" ? "text-lg" : size === "md" ? "text-xl" : "text-2xl"}`}
+        >
+          Viera Floors
+        </span>
+        <span className={`text-muted-foreground leading-tight ${size === "sm" ? "text-xs" : "text-sm"}`}>{t('expert', 'nav')}</span>
+      </div>
     </div>
   )
 }
