@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { useLanguage } from "@/contexts/language-context"
 import Link from "next/link"
+import { motion } from "framer-motion"
 
 export function Hero() {
   const { t } = useLanguage()
@@ -109,63 +110,25 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Right Content - Visual Elements */}
+          {/* Right Content - Spectacular Visual */}
           <div className="relative animate-fade-in-scale" style={{ animationDelay: "0.3s" }}>
-            <Card className="p-8 bg-card/80 dark:bg-card/90 backdrop-blur-sm border-2 border-primary/20 dark:border-primary/30 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105">
-              <div className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="flex items-center gap-3 p-4 bg-primary/10 dark:bg-primary/20 rounded-lg hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors duration-300">
-                    <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                      <Home className="w-5 h-5 text-primary-foreground" />
-                    </div>
-                    <div>
-                      <div className="font-semibold text-sm">{t("bathroom.title", "services")}</div>
-                      <div className="text-xs text-muted-foreground">{t("modern", "hero")}</div>
-                    </div>
-                  </div>
+            <motion.div
+              className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white/10"
+              whileHover={{ scale: 1.02 }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            >
+              <img
+                src="/luxury-hero.png"
+                alt="Luxury Remodeling Showcase"
+                className="w-full h-full object-cover aspect-[4/5] lg:aspect-square"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+            </motion.div>
 
-                  <div className="flex items-center gap-3 p-4 bg-secondary/10 dark:bg-secondary/20 rounded-lg hover:bg-secondary/20 dark:hover:bg-secondary/30 transition-colors duration-300">
-                    <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center">
-                      <Hammer className="w-5 h-5 text-secondary-foreground" />
-                    </div>
-                    <div>
-                      <div className="font-semibold text-sm">{t("kitchen.title", "services")}</div>
-                      <div className="text-xs text-muted-foreground">{t("elegant", "hero")}</div>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center gap-3 p-4 bg-primary/10 dark:bg-primary/20 rounded-lg hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors duration-300">
-                    <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                      <Sparkles className="w-5 h-5 text-primary-foreground" />
-                    </div>
-                    <div>
-                      <div className="font-semibold text-sm">{t("ceramic.title", "services")}</div>
-                      <div className="text-xs text-muted-foreground">{t("premium", "hero")}</div>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center gap-3 p-4 bg-secondary/10 dark:bg-secondary/20 rounded-lg hover:bg-secondary/20 dark:hover:bg-secondary/30 transition-colors duration-300">
-                    <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center">
-                      <Home className="w-5 h-5 text-secondary-foreground" />
-                    </div>
-                    <div>
-                      <div className="font-semibold text-sm">{t("ceiling.title", "services")}</div>
-                      <div className="text-xs text-muted-foreground">{t("unique", "hero")}</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="text-center p-6 bg-gradient-to-r from-primary/10 to-secondary/10 dark:from-primary/20 dark:to-secondary/20 rounded-xl">
-                  <Sparkles className="w-8 h-8 text-primary mx-auto mb-3 animate-pulse" />
-                  <h3 className="font-bold text-lg mb-2">{t("qualityGuarantee", "hero")}</h3>
-                  <p className="text-sm text-muted-foreground">{t("qualityDescription", "hero")}</p>
-                </div>
-              </div>
-            </Card>
-
-            <div className="absolute -top-4 -right-4 w-8 h-8 bg-primary rounded-full animate-bounce"></div>
+            {/* Decorative Elements */}
+            <div className="absolute -top-6 -right-6 w-12 h-12 bg-primary rounded-full animate-bounce blur-sm opacity-50"></div>
             <div
-              className="absolute -bottom-4 -left-4 w-6 h-6 bg-secondary rounded-full animate-bounce"
+              className="absolute -bottom-6 -left-6 w-10 h-10 bg-secondary rounded-full animate-bounce blur-sm opacity-50"
               style={{ animationDelay: "0.5s" }}
             ></div>
           </div>

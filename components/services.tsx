@@ -101,10 +101,7 @@ export function Services() {
                       <IconComponent className="w-6 h-6 text-primary-foreground" />
                     </div>
 
-                    {/* Price Badge */}
-                    <div className="absolute top-4 left-4 bg-secondary/90 backdrop-blur-sm text-secondary-foreground px-3 py-1 rounded-full text-sm font-semibold transform -translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100">
-                      {service.price}
-                    </div>
+
                   </div>
 
                   <CardContent className="p-6">
